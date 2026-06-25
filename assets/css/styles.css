@@ -681,4 +681,26 @@ display: inline-block;
 color: #f39c12;
 transition:.3s ease all;
 }
+
+.project {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+.project-info {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    padding-bottom: 40px;
+}
+
+.project-info p {
+    overflow: visible !important;
+}
+
+.row {
+    overflow: visible !important;
+}
 }
