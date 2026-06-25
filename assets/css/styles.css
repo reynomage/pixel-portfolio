@@ -640,7 +640,16 @@ background: url("../../assets/img/hero-mob.jpg") center center;
 font-size:1em;
 margin-bottom:15px;
 }
-
+.project-image {
+display: none;
+}
+.project-info {
+position: relative;
+margin: 0;
+padding: 30px 15px;
+top: auto;
+transform: none;
+}
 #contact-me-form {
 width: 70%;
 }
@@ -674,57 +683,53 @@ transition:.3s ease all;
 }
 
 .project {
-display: flex !important;
-align-items: flex-start !important;
-gap: 30px;
-padding: 30px;
-margin-bottom: 40px;
-height: auto !important;
-min-height: unset !important;
-max-height: none !important;
-overflow: visible !important;
-}
-
-.project-image {
-display: block !important;
-flex-shrink: 0;
-width: 220px;
-}
-
-.project-image img {
-width: 100%;
-height: auto;
-display: block;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
 }
 
 .project-info {
-width: 100%;
-height: auto !important;
-max-height: none !important;
-overflow: visible !important;
-margin: 0 !important;
-padding: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    padding-bottom: 40px;
 }
 
 .project-info p {
-overflow: visible !important;
-white-space: normal !important;
+    overflow: visible !important;
 }
 
-.project-info a {
-display: inline-block;
-margin-top: 10px;
+.row {
+    overflow: visible !important;
 }
 
-@media only screen and (max-width: 768px) {
-.project {
-    flex-direction: column;
+.simple-projects {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.project-image {
-    width: 100%;
+.simple-project {
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #444;
+
+    text-align: left;
 }
 
+.simple-project h3 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.simple-project p {
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.simple-project a {
+    display: inline-block;
+    margin-top: 10px;
 }
 
 }
