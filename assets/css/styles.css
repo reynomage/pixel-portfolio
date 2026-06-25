@@ -276,64 +276,90 @@ font-size: 1.3em;
 padding: 0 0 0 15px;
 font-size: 1.3em;
 }
-/* projects Section */
+/* Projects Section */
+
 #projects {
-padding: 50px 15px;
-border-bottom: 1px solid #dcd9d9;
-text-align: center;
+    padding: 50px 15px;
+    border-bottom: 1px solid #dcd9d9;
+
+    text-align: left;
 }
+
 #projects h2 {
-color: #374054;
-margin-bottom: 50px;
+    color: #374054;
+    margin-bottom: 50px;
+
+    text-align: center;
 }
+
 .project {
-position: relative;
-max-width: 900px;
-margin: 0 auto 30px auto;
-overflow: hidden;
-background: #fff;
-border-radius: 4.5px;
-border: 3px solid #949494;
+    position: relative;
+
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+
+    background: #fff;
+
+    border: 3px solid #949494;
+    border-radius: 4.5px;
+
+    overflow: visible;
+
+    display: flex;
+    align-items: flex-start;
 }
+
 .project-image {
-float: left;
+    flex-shrink: 0;
 }
-.project-cc-image {
-min-width: 300px;
-min-height: 300px;
-background-position: center center;
-background-size: cover;
-background-repeat: no-repeat;
+
+.project-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+
+    display: block;
 }
-.project-image img:before {
-content: ' ';
-position: absolute;
-background-image: url("../../assets/img/fallback.jpg");
-display: inline-block;
-min-width: 300px;
-min-height: 300px;
-background-repeat: no-repeat;
-}
+
 .project-info {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-margin-left: 300px;
-padding: 15px
+    position: static;
+
+    transform: none;
+
+    margin-left: 0;
+
+    padding: 25px;
+
+    width: 100%;
+
+    text-align: left;
 }
+
 .project-info h3 {
-font-size: 1.6em;
-font-weight: 300;
-color: #374054;
-margin: 0 0 15px 0;
+    font-size: 28px;
+    font-weight: 400;
+
+    color: #374054;
+
+    margin-bottom: 15px;
 }
+
 .project-info p {
-color: #74808a;
-margin: 0 0 15px 0;
-font-size: 1.3em;
+    color: #74808a;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    margin-bottom: 15px;
 }
+
+.project-info a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
 #more-projects {
-display: none;
+    display: none;
 }
 /* skills Section */
 #skills {
@@ -703,7 +729,7 @@ transition:.3s ease all;
 .row {
     overflow: visible !important;
 }
-
+}
 .simple-projects {
     max-width: 900px;
     margin: 0 auto;
@@ -730,6 +756,4 @@ transition:.3s ease all;
 .simple-project a {
     display: inline-block;
     margin-top: 10px;
-}
-
 }
