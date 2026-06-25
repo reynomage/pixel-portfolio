@@ -640,16 +640,7 @@ background: url("../../assets/img/hero-mob.jpg") center center;
 font-size:1em;
 margin-bottom:15px;
 }
-.project-image {
-display: none;
-}
-.project-info {
-position: relative;
-margin: 0;
-padding: 30px 15px;
-top: auto;
-transform: none;
-}
+
 #contact-me-form {
 width: 70%;
 }
@@ -683,24 +674,57 @@ transition:.3s ease all;
 }
 
 .project {
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    overflow: visible !important;
+display: flex !important;
+align-items: flex-start !important;
+gap: 30px;
+padding: 30px;
+margin-bottom: 40px;
+height: auto !important;
+min-height: unset !important;
+max-height: none !important;
+overflow: visible !important;
+}
+
+.project-image {
+display: block !important;
+flex-shrink: 0;
+width: 220px;
+}
+
+.project-image img {
+width: 100%;
+height: auto;
+display: block;
 }
 
 .project-info {
-    height: auto !important;
-    max-height: none !important;
-    overflow: visible !important;
-    padding-bottom: 40px;
+width: 100%;
+height: auto !important;
+max-height: none !important;
+overflow: visible !important;
+margin: 0 !important;
+padding: 0 !important;
 }
 
 .project-info p {
-    overflow: visible !important;
+overflow: visible !important;
+white-space: normal !important;
 }
 
-.row {
-    overflow: visible !important;
+.project-info a {
+display: inline-block;
+margin-top: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+.project {
+    flex-direction: column;
+}
+
+.project-image {
+    width: 100%;
+}
+
+}
+
 }
